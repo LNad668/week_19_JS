@@ -1,5 +1,5 @@
 
-class Rabotnic {
+class Rabotnic {                                       //создание класса
         constructor(name, surname, rate, days){
 this.name=name;
 this.surname=surname;
