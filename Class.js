@@ -8,7 +8,7 @@ this.days=days;
     }
 
     getSalary(){
-    console.log(this.rate * this.days)
+    console.log(this.rate * this.days) //сумма чисел 
     } 
 }   
     let rabotnic = new Rabotnic('Катерина', 'Петровна', 10, 31);
@@ -18,5 +18,5 @@ this.days=days;
     console.log(rabotnic.surname); //выведет 'Петрова'
     console.log(rabotnic.rate); //выведет 10
     console.log(rabotnic.days); //выведет 31
-    console.log(rabotnic.getSalary()); //выведет 310 - то есть 10*31
+    console.log(rabotnic.getSalary()); //
 
