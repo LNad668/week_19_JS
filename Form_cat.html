@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:required:valid {
+            border-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Привет любитель кошек</h1><br>
+        <div>
+            <p>Как зовут твоего любимца?</p>
+            <input type="text" id="catname" placeholder="Имя питомца" required />*<br>
+        </div>
+        <div>
+            <p>Представься сам пожалуйста</p>
+            <input type="text" id="username" placeholder="Представтесь" required />*<br>
+        </div>
+        <div>
+            <p>Добавте электронный адрес</p>
+            <input type="email" id="email" placeholder="email" required />*<br>
+        </div>
+        <p>Выбери какой породы твой любимец</p>
+        <select id="breed">
+            <option value="Бурманская кошка">Бурманская кошка</option>
+            <option value="Сибирская кошка">Сибирская кошка</option>
+            <option value="Бенгальская кошка">Бенгальская кошка</option>
+            <option value="Мейн-Кун">Мейн-Кун</option>
+            <option value="Сиамская кошка">Сиамская кошка</option>
+            <option value="Русская голубая кошка">Русская голубая кошка</option>
+            <option value="Донской сфинкс">Донской сфинкс</option>
+            <option value="Японский бобтейл">Японский бобтейл</option>
+            <option value="Просто кошка">Просто кошка</option>
+        </select><br>
+
+        <p> Что ест твой любимец (Можно выбпать несколько) </p>
+        <fieldset>
+            <input type="checkbox" id="dryfood" name="dryfood" value="сухой корм" />
+            сухой корм<br>
+            <input type="checkbox" id="wetfood" name="wetfood" value="влажный корм" />
+            влажный корм <br>
+            <input type="checkbox" id="natfood" name="natfood" value="натуральный корм" />
+            натуральный корм <br>
+        </fieldset>
+        <p> Укажите пол любимца: </p>
+        <input type="radio" name="s" value="Мужской"> Мужской<br>
+        <input type="radio" name="s" value="Женский"> Женский
+
+        <p>Комментарий владельца</p>
+        <textarea rows="5" cols="20">Оставь свой комментарий</textarea><br>
+        <p>Загрузить фото питомца</p>
+        <input type="file"> <br>
+        <button type="submit" id="submit">Сохранить</button>
+    </form>
+
+    <script src="form_cat.js"></script>
+</body>
+
+</html>
