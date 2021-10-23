@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h1>Java калькулятор</h1>
+    <form>
+        <!-- поле ввода первого числа -->
+        <p><input id="num1" />Введите первое число </p>
+        <p><input id="num2" />Введите второе число</p>
+
+        <!-- блок с кнопками -->
+        <div id="operator_btns" onclick="">
+            <button id="plus" type="submit" name="sum">+</button>
+            <button id="minus" onclick="op='-'">-</button>
+            <button id="times" onclick="op='*'">*</button>
+            <button id="divide" onclick="op='/'">/</button>
+            <p>Выберите действие</p>
+        </div>
+        <br>
+
+
+        <!-- кнопка для расчётов -->
+        <button type="submit" name="clik">Посчитать</button>
+
+        <p id="result"></p>
+    </form>
+
+    <script src="Kalculator.js"></script>
+</body>
+
+</html>
